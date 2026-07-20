@@ -12,7 +12,7 @@ import os
 
 class LoadDataset:
     def __init__(self):
-        self.dataset_path=".dataset/dialog_dataset/"
+        self.dataset_path="./dataset/dialog_dataset/"
     def load_train_df(self):
         self.dataset_train=pd.read_csv(os.path.join(self.dataset_path,"train.csv"))
         return self.dataset_train

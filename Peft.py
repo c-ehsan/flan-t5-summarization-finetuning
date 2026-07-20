@@ -124,7 +124,7 @@ class Peft:
 
 
     def run(self):
-        self.loadModel_func(model_path="./model/flan-t5-base")
+        self.loadModel_func(model_path="google/flan-t5-base")
         self.loadDataset_func(dataset_path="./dataset/dialog_dataset",index=200)
         self.tokenized_datasets_func()
         self.Data_collator_func()
@@ -134,7 +134,5 @@ class Peft:
         self.training_args_func(output_dir_path="./logs",per_device_train_batch_size=2,per_device_eval_batch_size=2,epochs=3,gradient_accumulation_steps=2,learning_rate=0.0002,logging_steps=50,weight_decay=0.01)
         self.Trainer_func()
 
-if __name__=="__main__":
-    peft=Peft()
-    peft.run()
+
         

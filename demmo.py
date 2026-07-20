@@ -47,6 +47,6 @@ class SummerizationDemmo:
 
 if __name__=="__main__":
     sd=SummerizationDemmo()
-    sd.load_model("./model/flan-t5-base")
+    sd.load_model("google/flan-t5-base")
     sd.load_dataset("./dataset/dialog_dataset")
     sd.get_reference([3,4])

@@ -75,7 +75,7 @@ class FullFinetune:
         trainer.train()
     
     def run(self):
-        self.loadModel_func(model_path="./model/flan-t5-base")
+        self.loadModel_func(model_path="google/flan-t5-base")
         self.loadDataset_func(dataset_path="./dataset/dialog_dataset",index=200)
         self.tokenized_datasets_func()
         self.Data_collator_func()
