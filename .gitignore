@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.pyc
+
+# Environment
+transformer_env/
+venv/
+
+# Models
+model/
+*.bin
+*.safetensors
+
+# Dataset (if large)
+dataset/
+
+# Mac
+.DS_Store
+
+# Outputs
+logs/
+checkpoints/
+outputs/
